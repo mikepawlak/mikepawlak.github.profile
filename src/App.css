@@ -23,6 +23,28 @@
   color: #61dafb;
 }
 
+.header-container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.content-container {
+  max-width: 1800px;
+  margin: 0px auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+h4,
+h5,
+h6,
+p {
+  font-family: "Cormorant Garamond", serif;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

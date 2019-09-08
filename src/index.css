@@ -1,13 +1,138 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  margin: 0;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #c2c868 50%, #f2f1dc 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 8s;
+}
+
+.bg3 {
+  animation-duration: 8s;
+}
+
+#app {
+  background-color: #cecece;
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* header */
+.main-title {
+  font-size: 8rem !important;
+  font-weight: normal;
+}
+.jumbotron {
+  background-color: transparent !important;
+}
+.jumbo-wrapper {
+  max-width: 550px;
+  margin: 0px auto;
+}
+.jumbo-content {
+  padding: 15px;
+  background: rgba(250, 250, 250, 0.8);
+}
+
+.jumbo-break {
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.emph {
+  font-weight: bold;
+  color: #6259a8;
+}
+
+.social-link {
+  font-size: 30px;
+  padding: 15px;
+  color: #6259a8;
+}
+
+/* content */
+.resume-header {
+  text-align: left;
+  color: #b56762;
+  font-weight: bold;
+}
+
+.positions {
+  list-style: none;
+}
+.position h4 {
+  color: #6259a8;
+  font-weight: bold;
+  font-style: italic;
+}
+.position div {
+  text-align: left;
+}
+
+.position h4,
+.position p {
+  display: inline-block;
+  padding: 0px 10px 0 0;
+}
+
+.education-block h4 {
+  color: #6259a8;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.education-block h4,
+.education-block p {
+  text-align: left;
+  padding-left: 40px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+@media (max-width: 576px) {
+  .main-title {
+    font-size: 3rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 4rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }
