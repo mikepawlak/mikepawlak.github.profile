@@ -29,7 +29,7 @@ class Content extends Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col"></div>
-            <div className="col-8 jumbo-content">
+            <div className="col-12 col-md-8 jumbo-content">
               <h2 className="resume-header">Work Experience</h2>
               <ul className="positions">
                 {this.state.positions.map((el, i) => (
