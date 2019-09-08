@@ -19,9 +19,21 @@ class Header extends Component {
           icon: <FaGithub />,
           link: "https://github.com/mikepawlak"
         },
-        { name: "linkedin", icon: <FaLinkedin />, link: "https://linkedin.com/in/pawlakmike/" },
-        { name: "stackoverflow", icon: <FaStackOverflow />, link: "https://stackoverflow.com/users/4869078/mpawlak?tab=profile" },
-        { name: "email", icon: <FaEnvelope />, link: "mailto:mpawlak719@gmail.com" }
+        {
+          name: "linkedin",
+          icon: <FaLinkedin />,
+          link: "https://linkedin.com/in/pawlak-mike/"
+        },
+        {
+          name: "stackoverflow",
+          icon: <FaStackOverflow />,
+          link: "https://stackoverflow.com/users/4869078/mpawlak?tab=profile"
+        },
+        {
+          name: "email",
+          icon: <FaEnvelope />,
+          link: "mailto:mpawlak719@gmail.com"
+        }
       ]
     };
   }
