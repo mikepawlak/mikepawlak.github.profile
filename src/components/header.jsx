@@ -3,7 +3,7 @@ import {
   FaGithub,
   FaEnvelope,
   FaLinkedin,
-  FaStackOverflow
+  FaStackOverflow,
 } from "react-icons/fa";
 
 class Header extends Component {
@@ -17,24 +17,24 @@ class Header extends Component {
         {
           name: "github",
           icon: <FaGithub />,
-          link: "https://github.com/mikepawlak"
+          link: "https://github.com/mikepawlak",
         },
         {
           name: "linkedin",
           icon: <FaLinkedin />,
-          link: "https://linkedin.com/in/pawlak-mike/"
+          link: "https://linkedin.com/in/pawlak-mike/",
         },
         {
           name: "stackoverflow",
           icon: <FaStackOverflow />,
-          link: "https://stackoverflow.com/users/4869078/mpawlak?tab=profile"
+          link: "https://stackoverflow.com/users/4869078/mpawlak?tab=profile",
         },
         {
           name: "email",
           icon: <FaEnvelope />,
-          link: "mailto:mpawlak719@gmail.com"
-        }
-      ]
+          link: "mailto:mpawlak719@gmail.com",
+        },
+      ],
     };
   }
 
@@ -43,7 +43,7 @@ class Header extends Component {
       this.setState({
         profile: this.props.profile,
         position: this.props.profile.profile.headline,
-        location: this.props.profile.profile.location
+        location: this.props.profile.profile.location,
       });
     }
   }
@@ -70,8 +70,8 @@ class Header extends Component {
                 <hr className="jumbo-break" />
                 <p className="lead">
                   I am currently a{" "}
-                  <span className="emph">{this.state.position}</span> in{" "}
-                  <span className="emph">{this.state.location}</span>
+                  <span className="emph">Software Engineer</span> in{" "}
+                  <span className="emph">Madison, WI</span>
                 </p>
                 <p className="lead">
                   {this.state.socialLinks.map((el, i) => (
