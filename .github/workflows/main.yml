@@ -12,6 +12,11 @@ jobs:
     name: Push image
     runs-on: ubuntu-latest
     steps:
+
+  build:
+    name: build, push, and deploy
+    runs-on: ubuntu-latest
+    steps:
       - name: Check out the repo
         uses: actions/checkout@v2
 
@@ -34,12 +39,6 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-  build:
-    name: deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v2
       - name: Install doctl
         uses: digitalocean/action-doctl@v2
         with:
