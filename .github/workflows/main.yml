@@ -3,10 +3,9 @@ on:
     branches:
       - master
     paths:
-      - "config/**"
-      - "site/**"
       - "Dockerfile"
       - ".github/workflows/**"
+      - "portfolio-chart/"
 
 jobs:
   push_to_registry:
