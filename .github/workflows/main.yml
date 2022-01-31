@@ -8,11 +8,6 @@ on:
       - "portfolio-chart/"
 
 jobs:
-  push_to_registry:
-    name: Push image
-    runs-on: ubuntu-latest
-    steps:
-
   build:
     name: build, push, and deploy
     runs-on: ubuntu-latest
