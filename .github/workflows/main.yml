@@ -44,7 +44,7 @@ jobs:
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
       - name: Save DigitalOcean kubeconfig with short-lived credentials
-        run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 pawlak-pool-udltfozyn
+        run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 ${{ secrets.DIGITALOCEAN_CLUSTER }}
 
       - name: Deploy to DigitalOcean Kubernetes
         run: helm upgrade --install portfolio-ui ./portfolio-chart/ --namespace portfolio
