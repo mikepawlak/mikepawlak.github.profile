@@ -13,14 +13,14 @@ class Content extends Component {
   }
 
   componentDidUpdate(prevState) {
-    if (this.props.profile !== prevState.profile) {
-      this.setState({
-        profile: this.props.profile,
-        positions: this.props.profile.positions.slice(0, 3),
-        education: this.props.profile.educations,
-        volunteerExp: this.props.profile.volunteerExperience,
-      });
-    }
+    // if (this.props.profile !== prevState.profile) {
+    //   this.setState({
+    //     profile: this.props.profile,
+    //     positions: this.props.profile.positions.slice(0, 3),
+    //     education: this.props.profile.educations,
+    //     volunteerExp: this.props.profile.volunteerExperience,
+    //   });
+    // }
   }
 
   render() {
