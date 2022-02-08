@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "portfolio-chart.fullname" . }}
+  annotations:
+        rollme: {{ randAlphaNum 5 | quote }}
   labels:
     {{- include "portfolio-chart.labels" . | nindent 4 }}
 spec:
