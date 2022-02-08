@@ -12,7 +12,7 @@ jobs:
     name: build, push, and deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the repo
+      - name: Check out the repository
         uses: actions/checkout@v2
 
       - name: Log in to Docker Hub
