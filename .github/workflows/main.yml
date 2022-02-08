@@ -37,7 +37,7 @@ jobs:
       - name: Save DigitalOcean kubeconfig with short-lived credentials
         run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 ${{ secrets.DIGITALOCEAN_CLUSTER }}
       - name: Deploy to DigitalOcean Kubernetes
-        run: helm upgrade --install portfolio-ui ./portfolio-chart/ --namespace portfolio --recreate-pods --force
+        run: helm upgrade --install portfolio-ui ./portfolio-chart/ --namespace portfolio --wait=300 --recreate-pods --force
 
       - name: Verify deployment
         run: kubectl rollout status deployment/portfolio-ui --namespace portfolio
