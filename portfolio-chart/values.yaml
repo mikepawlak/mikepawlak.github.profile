@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: mpawlak719/profile
+  repository: mpawlak719/portfolio-ui
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
