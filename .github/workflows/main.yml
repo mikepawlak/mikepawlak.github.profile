@@ -2,10 +2,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - "Dockerfile"
-      - ".github/workflows/**"
-      - "portfolio-chart/"
 
 jobs:
   build:
