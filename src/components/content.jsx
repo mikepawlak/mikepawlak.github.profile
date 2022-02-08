@@ -49,6 +49,22 @@ class Content extends Component {
                     <p>
                       <em>Jan 2020 - present</em>
                     </p>
+                    <div className="pos-container">
+                      <p className="subtitle">Highlights</p>
+                      <ul>
+                        <li>Transitioned a dozen apis to Kubernetes on GCP</li>
+                      </ul>
+                      <p className="subtitle">Technologies Used</p>
+                      <p>
+                        Java, Java Spring, Angular, NestJS, GCP, Kubernetes,
+                        Helm, Rabbitmq
+                      </p>
+                      <p className="subtitle">Responsibilities</p>
+                      <p>
+                        Develop and maintain various apis, jobs, and workflows
+                        hosted on GCP
+                      </p>
+                    </div>
                     <hr />
                   </div>
                 </li>
@@ -58,6 +74,19 @@ class Content extends Component {
                     <p>
                       <em>Jul 2019 - Jan 2020</em>
                     </p>
+                    <div className="pos-container">
+                      <p className="subtitle">Technologies Used</p>
+                      <p>
+                        JavaEE, Java Spring, Hibernate, Oracle SQL, Angular,
+                        Sass, NodeJS
+                      </p>
+                      <p className="subtitle">Responsibilities</p>
+                      <p>
+                        Act as technical lead on all enterprise web projects for
+                        Fleet Farm. Lead an 8 person agile team through all
+                        steps of the SDLC.
+                      </p>
+                    </div>
                     <hr />
                   </div>
                 </li>
@@ -67,6 +96,32 @@ class Content extends Component {
                     <p>
                       <em>Oct 2018 - Jul 2019</em>
                     </p>
+                    <div className="pos-container">
+                      <p className="subtitle">Highlights</p>
+                      <ul>
+                        <li>
+                          Acted on lead developer in several projects, including
+                          migrations of legacy code, new development, and
+                          uplifting projects
+                        </li>
+                        <li>
+                          Developed and implemented documentation process
+                          improvement including outage handling process.
+                        </li>
+                      </ul>
+                      <p className="subtitle">Technologies Used</p>
+                      <p>
+                        JavaEE, Java Spring, Hibernate, Oracle SQL, Angular,
+                        Sass, NodeJS
+                      </p>
+                      <p className="subtitle">Responsibilities</p>
+                      <p>
+                        Maintain existing, and develop new internal web based
+                        applications primarily with an employee facing focus.
+                        Work with product owners, QA, and other engineers to
+                        steer projects through SDLC.{" "}
+                      </p>
+                    </div>
                     <hr />
                   </div>
                 </li>
@@ -76,6 +131,34 @@ class Content extends Component {
                     <p>
                       <em>Dec 2017 - Oct 2018</em>
                     </p>
+                    <div className="pos-container">
+                      <p className="subtitle">Highlights</p>
+                      <ul>
+                        <li>
+                          Created best practices and documentation utilized by
+                          entire website support staff.
+                        </li>
+                        <li>
+                          Built API hooks for third-party plugins currently used
+                          across website footprint.
+                        </li>
+                        <li>
+                          Guided high priority clients through website redesign,
+                          utilizing both technical aptitude and effective
+                          communication.
+                        </li>
+                      </ul>
+                      <p className="subtitle">Technologies Used</p>
+                      <p>PHP, JavaScript, HTML/CSS, MySQL</p>
+                      <p className="subtitle">Responsibilities </p>
+                      <p>
+                        Maintained websites for existing customers, built out
+                        newly requested features, integrated third party
+                        plugins, and guided clients through redesigns. Lead
+                        project teams with as many as 5 employees to implement
+                        changes across several websites.
+                      </p>
+                    </div>
                     <hr />
                   </div>
                 </li>
